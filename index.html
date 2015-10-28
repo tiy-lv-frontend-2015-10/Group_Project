@@ -7,16 +7,41 @@
 	<link src="main.css"></link>
 </head>
 <body>
-	<div id="caterContainer"></div>
+	<div id="beerContainer"></div>
 
 
 
-	<script type="x-tmpl-mustache" id="menuTemplate">
-	<div>
-	</div>
+
+	
 
 
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.js"></script>
+	<script src="main.js"></script>
+
+
+
+
+
+
+
+
+		<script type="x-tmpl-mustache" id="beerTemplate">
+		<div>
+
+		{{#beerData}}
+			{{test}}
+		{{/beerData}}
+
+		</div>
+
+	</script>
 </body>
 </html>
