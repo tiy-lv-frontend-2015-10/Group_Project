@@ -13,8 +13,8 @@ $(document).ready(function(){
 		});
 
 
-		var beerGet ={
-			beerData:beerData
+		var beerGet = {
+			test:test
 		};
 
 		var beerTemplate = $("#beerTemplate").text();
@@ -38,3 +38,11 @@ $(document).ready(function(){
 
 
 });
+
+
+
+
+
+
+
+
