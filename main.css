@@ -66,13 +66,14 @@
 }
 
 #experience {
-	height:300px;
+	height:340px;
 	width:600px;
 	background-color: #fff;
 	position: relative;
 	top:100px;
 	left:50px;
 	border-radius:5px;
+
 }
 
 #experience p {
@@ -82,4 +83,35 @@
 	text-align: justify;
 
 }
+
+#lastMeal {
+	position: relative;
+	top:20px;
+	height: 250px;
+	width:250px;
+	background: #fff;
+	margin:auto;
+}
+
+#map {
+	margin:auto;
+	padding:25px;
+}
+
+#food {
+	position: relative;
+	height:350px;
+	width:100%;
+	background:#000;
+	margin-top: 150px;
+}
+
+#drinks {
+	position: relative;
+	height:350px;
+	width:100%;
+	background:gray;
+
+}
+
 
