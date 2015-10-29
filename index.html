@@ -32,11 +32,12 @@
 	<div id="bodyContainer">
 	
 		<div id="specialContainer">
+
+			<div><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.3355902079024!2d-115.15467894947072!3d36.158387479988036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab244a1cb%3A0xd0b332727ed859dc!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1446084095351" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
 			<div id="lastMeal">
 				<span>Inmates Last Meal</span>
 			</div>
-
-			<div><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.3355902079024!2d-115.15467894947072!3d36.158387479988036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab244a1cb%3A0xd0b332727ed859dc!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1446084095351" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 			<div id="idk"></div>
 		</div>
 
@@ -59,15 +60,18 @@
 
 
 
-</div>
+	
 
 	
 	
-	<div id="newsContainer"></div>
+		<div id="newsContainer"></div>
+		<h3>Entrees</h3>
+		<div id="entreeContainer"></div>
+		<h3>Drinks</h3>
+		<div id="beerContainer"></div>
 
-	<div id="beerContainer"></div>
-
-	<div id="entreeContainer"></div>
+		
+	</div>
 
 	<div id="footer"></div>
 
@@ -126,7 +130,7 @@
 		{{#beer}}
 		<div class="beerDiv">
 			<ul>
-				<li class="beerList" id="beerid">{{id}}</li>
+				
 				<li class="beerList" id="beerName">{{item}}</li>
 				<li class="beerList" id="beerPrice">${{price}}.00</li>
 				<li class="beerList" id="beerStyle">{{style}}</li>
@@ -148,6 +152,7 @@
 
 
 		</div>	
+		<hr />
 		{{/beer}}
 
 		
@@ -160,11 +165,12 @@
 		
 			
 				{{#entree}}
-					<div>
+					<div id="entreDiv">
 					<ul id="entree">
-						<li class="entreeList">{{id}}</li>
+						<li id="price">${{price}}.00</li>
 						<li class="entreeList">{{item}}</li>
-						<li class="entreeList">${{price}}.00</li>
+
+						
 						<li class="entreeList">{{description}}</li>
 						{{#allergies}}
 						<li class="entreeList">This item may contain shellfish or another item some people may be allergic to. Please ask your waiter for assistance</li>
@@ -187,11 +193,15 @@
 						{{/vegan}}
 					</ul>
 				</div>
+
+				<hr />
 				{{/entree}}
 			
 		
 
 		</script>
+		<!--<li class="entreeList">{{id}}</li>
+		 <li class="beerList" id="beerid">{{id}}</li>-->
 
 
 
