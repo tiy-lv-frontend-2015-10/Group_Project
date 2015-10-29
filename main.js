@@ -1,12 +1,15 @@
 $(document).ready(function(){
+	
+
+
 	var menuUrl = 'https://json-data.herokuapp.com/restaurant/menu/3';
 	$.ajax({
 		url:menuUrl,
 		method: 'get',
 		dataType: 'json',
-	}).then(function(beerData){
+	}).then(function(menu){
 		
-		var test=beerData.Beer.map(function(obj){
+		var test=menu.Beer.map(function(obj){
 			return {
 				"id": obj.id,
 				"item": obj.item,
@@ -17,10 +20,11 @@ $(document).ready(function(){
 				"allergies": obj.allergies,
 				"favorite": obj.favorite,
 				"bottle": obj.bottle,
-				"draught": obj.draught
+				"draught": obj.draught,
 			};
-		});
 
+		});
+	
 
 		var beerGet = {
 			test:test
@@ -29,14 +33,69 @@ $(document).ready(function(){
 		var beerTemplate = $("#beerTemplate").text();
 		var beerHTML = Mustache.render(beerTemplate,beerGet);
 		$("#beerContainer").html(beerHTML);
-		console.log(test);
+
+
+			var entree=menu.entrees.map(function(obj){
+				return {
+					"id": obj.id,
+					"item": obj.item,
+					"price":obj.price,
+					"description": obj.description,
+					"allergies": obj.allergies,
+					"favorite": obj.favorite,
+					"spicy": obj.spicy,
+					"vegan": obj.vegan,
+					};
+					
+				});
+
+		var entreeGet = {
+			entree:entree
+		};
+
+		var entreeTemplate = $("#entreeTemplate").text();
+		var entreeHTML = Mustache.render(entreeTemplate,entreeGet);
+		$("#entreeContainer").html(entreeHTML);
+		
+
+		
 
 	});
 
 
+
+
+
+
+
 	
 
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

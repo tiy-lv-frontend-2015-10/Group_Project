@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div id="beerContainer"></div>
+	<div id="entreeContainer"></div>
 
 
 
@@ -34,20 +35,21 @@
 
 
 		<script type="x-tmpl-mustache" id="beerTemplate">
+		
 		<div>
 
 		{{#test}}
 			<ul>
-				
-				<li>{{item}}</li>
-				<li>${{price}}.00</li>
-				<li>{{style}}</li>
-				
-				<li>{{description}}</li>
-				<li>{{allergies}}</li>
-				<li>favorite{{favorite}}</li>
-				<li>{{bottle}}</li>
-				<li>{{draught}}</li>
+				<li id="beerid">{{id}}</li>
+				<li id="beerName">{{item}}</li>
+				<li id="beerPrice">${{price}}.00</li>
+				<li id="beerStyle">{{style}}</li>
+				<li id="abv">{{abv}}</li>
+				<li id="beerDes">{{description}}</li>
+				<li id="beerAl">{{allergies}}</li>
+				<li id="beerFav">favorite{{favorite}}</li>
+				<li id="beerBot">{{bottle}}</li>
+				<li id="beerDrat">{{draught}}</li>
 			</ul>
 
 
@@ -57,5 +59,31 @@
 		</div>
 
 	</script>
+
+
+		<script type="x-tmpl-mustache" id="entreeTemplate">
+		
+			<div>
+				{{#entree}}
+
+					<ul>
+						<li>{{id}}</li>
+						<li>{{item}}</li>
+						<li>{{price}}</li>
+						<li>{{description}}</li>
+						<li>{{allergies}}</li>
+						<li>{{favorite}}</li>
+						<li>{{spicy}}</li>
+						<li>{{vegan}}</li>
+					</ul>
+
+				{{/entree}}
+			</div>
+		
+
+		</script>
+
+
+
 </body>
 </html>
