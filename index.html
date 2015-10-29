@@ -43,8 +43,7 @@
 	
 		
 		<div id="reviews">
-		<p>The best chicken I've ever tasted...
-		</p>
+		<p>The best chicken I've ever tasted...</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
@@ -127,9 +126,11 @@
 				<li class="beerList" id="beerName">{{item}}</li>
 				<li class="beerList" id="beerPrice">${{price}}.00</li>
 				<li class="beerList" id="beerStyle">{{style}}</li>
-				<li class="beerList" id="abv">{{abv}}</li>
+				<li class="beerList" id="abv">ABV: {{abv}}</li>
 				<li class="beerList" id="beerDes">{{description}}</li>
-				<li class="beerList" id="beerAl">{{allergies}}</li>
+				{{#allergies}}
+				<li class="beerList" id="beerAl">Alergy WatchList</li>
+				{{/allergies}}
 				{{#favorite}}
 				<li class="beerList" id="beerFav">Favorite</li>
 				{{/favorite}}
