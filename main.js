@@ -9,7 +9,7 @@ $(document).ready(function(){
 		dataType: 'json',
 	}).then(function(menu){
 		
-		var test=menu.Beer.map(function(obj){
+		var beer=menu.Beer.map(function(obj){
 			return {
 				"id": obj.id,
 				"item": obj.item,
@@ -27,12 +27,14 @@ $(document).ready(function(){
 	
 
 		var beerGet = {
-			test:test
+			beer:beer
 		};
 
 		var beerTemplate = $("#beerTemplate").text();
 		var beerHTML = Mustache.render(beerTemplate,beerGet);
 		$("#beerContainer").html(beerHTML);
+		console.log(beerGet);
+
 
 
 			var entree=menu.entrees.map(function(obj){

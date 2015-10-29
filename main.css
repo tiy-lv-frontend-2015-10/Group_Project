@@ -149,18 +149,20 @@ body {
 	width:100%;
 	background:#000;
 	margin-top: 150px;
+	color: white;
 }
 
 #beerContainer {
 	position: relative;
-	height:350px;
 	width:100%;
 	background:gray;
+	color:white;
 
 }
 
 #footer {
 	position: relative;
+	top:20px;
 	height:250px;
 	width:100%;
 	background:orange;
@@ -176,4 +178,17 @@ body {
 	left:60px;
 }
 
+.entreeList {
+	list-style: none;
+	padding:5px;
+	width:300px;
+	
+}
+
+#entreeContainer {
+	background:#F7F7F7;
+	top:120px;
+	position: relative;
+	height:1200px;
+}
 
