@@ -5,18 +5,32 @@
   font-family: 'zocial', sans-serif;
 }
 
+body {
+	background:#4b4856;
+
+}
+#socialDiv {
+	height:50px;
+}
+
+#wrapper {
+	background:#fff;
+}
 #logo {
 	position: relative;
-	height:180px;
-	width: 100%;
+	height:150px;
+	width: 1250px;
+	margin:auto;
 	background-image:url("logo.png");
 	background-repeat: no-repeat;
 	
 }
 
+
 #socialList {
 	position: relative;
 	float: right;
+
 	right: 20px;
 }
 
@@ -56,15 +70,19 @@
 #bodyContainer {
 	position: relative;
 	background: #4b4856;
-	height:1000px;
+	height:20%;
+	width:95%;
+	margin:auto;
 }
 
 #specialContainer {
 	
-	position: relative;
-	float: right;
+	position: absolute;
+	
 	top:40px;
-	z-index: 1;
+	right:5px;
+	display: block;
+	
 	height:550px;
 	width:300px;
 	background-color: #000;
@@ -72,28 +90,32 @@
 
 #reviews {
 	height:275px;
-	width:500px;
+	width:400px;
 	background: #333040;
 	position: relative;
-	top:80px;
-	left:50px;
+	top:25px;
 	color: white;
 	font-size: 24px;
 	padding:0 20px 0 20px;
+	display: block;
+
 }
 
 #reviews p {
 	padding-bottom:25px;
 	margin:0;
+	position: relative;
+	width:100%;
+	
+
 }
 
 #experience {
 	height:340px;
-	width:700px;
+	width:65%;
 	background-color: #fff;
 	position: relative;
 	top:100px;
-	left:50px;
 	border-radius:5px;
 
 }
@@ -111,10 +133,11 @@
 	top:20px;
 	height: 250px;
 	width:250px;
-	background: #fff;
 	margin:auto;
 }
-
+#special {
+	color: white;
+}
 #map {
 	margin:auto;
 	padding:25px;
@@ -122,15 +145,15 @@
 
 #food {
 	position: relative;
-	height:450px;
+	height:350px;
 	width:100%;
 	background:#000;
 	margin-top: 150px;
 }
 
-#drinks {
+#beerContainer {
 	position: relative;
-	height:450px;
+	height:350px;
 	width:100%;
 	background:gray;
 
@@ -138,15 +161,15 @@
 
 #footer {
 	position: relative;
-	height:350px;
+	height:250px;
 	width:100%;
 	background:orange;
 
 }
 
 .imgGal {
-	height:250px;
-	width:250px;
+	height:65%;
+	width:22%;
 	background:#fff;
 	position: relative;
 	top:45px;
