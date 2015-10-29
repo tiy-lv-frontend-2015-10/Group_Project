@@ -61,6 +61,7 @@
 
 	
 	
+	<div id="newsContainer"></div>
 
 	<div id="beerContainer"></div>
 
@@ -75,6 +76,26 @@
 	<script src="main.js"></script>
 
 	
+
+		<script type="x-tmpl-mustache" id="newsTemplate">
+			<div>
+
+		{{#news}}
+			<ul>
+				<li>{{title}}</li>
+				<li>{{post}}</li>
+				<li>{{date_published}}</li>
+
+			</ul>
+
+
+			
+		{{/news}}
+
+		</div>
+
+		</script>
+
 
 
 		<script type="x-tmpl-mustache" id="specialTemplate">

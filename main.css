@@ -70,7 +70,7 @@ body {
 #bodyContainer {
 	position: relative;
 	background: #4b4856;
-	height:20%;
+	
 	width:95%;
 	margin:auto;
 }
@@ -82,7 +82,6 @@ body {
 	top:40px;
 	right:5px;
 	display: block;
-	
 	height:550px;
 	width:300px;
 	background-color: #000;
@@ -162,7 +161,6 @@ body {
 
 #footer {
 	position: relative;
-	top:20px;
 	height:250px;
 	width:100%;
 	background:orange;
@@ -184,10 +182,15 @@ body {
 	width:300px;
 	
 }
+#newsContainer {
+	background:#F7F7F7;
+	top:120px;
+	position: relative;
+	height:300px;
+}
 
 #entreeContainer {
 	background:#F7F7F7;
-	top:120px;
 	position: relative;
 	height:1200px;
 }

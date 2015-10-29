@@ -1,6 +1,27 @@
 $(document).ready(function(){
 	
 
+	var newsUrl = 'https://json-data.herokuapp.com/restaurant/news/1';
+	$.ajax({
+		url:newsUrl,
+		method: 'get',
+		dataType: 'json',
+	}).then(function(news){
+		
+		var newsGet = {
+			news:news
+		};
+
+
+
+		var newsTemplate = $("#newsTemplate").text();
+		var newsHTML = Mustache.render(newsTemplate,newsGet);
+		$("#newsContainer").html(newsHTML);
+		console.log(newsGet);
+
+
+});
+
 
 	var menuUrl = 'https://json-data.herokuapp.com/restaurant/menu/3';
 	$.ajax({
@@ -33,7 +54,7 @@ $(document).ready(function(){
 		var beerTemplate = $("#beerTemplate").text();
 		var beerHTML = Mustache.render(beerTemplate,beerGet);
 		$("#beerContainer").html(beerHTML);
-		console.log(beerGet);
+		
 
 
 
@@ -78,7 +99,7 @@ $(document).ready(function(){
 	var specialTemplate = $("#specialTemplate").text();
 		var specialHTML = Mustache.render(specialTemplate,specialGet);
 		$("#lastMeal").html(specialHTML);
-		console.log(specialGet);
+		
 
 });
 	
