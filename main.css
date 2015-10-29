@@ -122,7 +122,7 @@
 
 #food {
 	position: relative;
-	height:350px;
+	height:450px;
 	width:100%;
 	background:#000;
 	margin-top: 150px;
@@ -130,7 +130,7 @@
 
 #drinks {
 	position: relative;
-	height:350px;
+	height:450px;
 	width:100%;
 	background:gray;
 
@@ -142,6 +142,15 @@
 	width:100%;
 	background:orange;
 
+}
+
+.imgGal {
+	height:250px;
+	width:250px;
+	background:#fff;
+	position: relative;
+	top:45px;
+	left:60px;
 }
 
 
