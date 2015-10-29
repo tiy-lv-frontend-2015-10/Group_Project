@@ -43,13 +43,13 @@
 	
 		
 		<div id="reviews">
-		<p>The best chicken I've ever tasted...</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<p>The best chicken I've ever tasted...</p><br/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br/>
 		</div>
 
 		<div id="experience">
-			<p>Founded in 2015 by three individuals who love to watch netflix  and chicken came across a coding project in where they had to create a website for an ‘imaginary restaurant’ . So we thought, what idea would be better than merging the two things we like most : chicken and Orange is the New Black. Orange is the New Chicken is the a jail themed restaurant in where you walk in going through a metal detector and see the crew dressed up as prison guards and you are the new inmate. We serve chicken based on the cast of OITNB the different styles in different styles to meet your different cravings.</p>
+			<p>Founded in 2015 by three individuals who love to watch netflix  and chicken came across a coding project in where they had to create a website for an ‘imaginary restaurant’ . So we thought, what idea would be better than merging the two things we like most : chicken and our favorite show, Orange is the New Black. and that’s how Orange is the new chicken was created. Orange is the New Chicken is a jail themed restaurant in where you walk in  through a metal detector.Our crew dressed up as prison guards greets you as you  are now our new inmate. We serve chicken named after the cast of OITNB so you have a chance to taste each personality to meet your different cravings. If you dare we have our friery french fry challenge where you try to fit 20 of our most FIERY HOT fries . If you past this challenge you get unlimited appetizers for the day . If not then you have to take a picture wearing our shirt of shame and post it in our Facebook page.</p>
 
 		</div>
 
@@ -80,15 +80,18 @@
 	
 
 		<script type="x-tmpl-mustache" id="newsTemplate">
-			<div>
+			<div id="news">
 
 		{{#news}}
-			<ul>
-				<li>{{title}}</li>
-				<li>{{post}}</li>
-				<li>{{date_published}}</li>
+		
+			<h2 id="welcome">{{title}}</h2>
 
-			</ul>
+			<span id="dateAdded">{{date_published}}</span>
+			<br />
+			<p id="post">{{post}}</p>
+			
+
+			
 
 
 			
@@ -118,9 +121,10 @@
 
 		<script type="x-tmpl-mustache" id="beerTemplate">
 		
-		<div>
+		
 
 		{{#beer}}
+		<div class="beerDiv">
 			<ul>
 				<li class="beerList" id="beerid">{{id}}</li>
 				<li class="beerList" id="beerName">{{item}}</li>
@@ -134,15 +138,19 @@
 				{{#favorite}}
 				<li class="beerList" id="beerFav">Favorite</li>
 				{{/favorite}}
-				<li class="beerList" id="beerBot">{{bottle}}</li>
-				<li class="beerList" id="beerDrat">{{draught}}</li>
+				{{#bottle}}
+				<li class="beerList" id="beerBot">Bottle</li>
+				{{/bottle}}
+				{{#draught}}
+				<li class="beerList" id="beerDrat">Draught</li>
+				{{/draught}}
 			</ul>
 
 
-			
+		</div>	
 		{{/beer}}
 
-		</div>
+		
 		
 
 	</script>
@@ -150,9 +158,9 @@
 
 		<script type="x-tmpl-mustache" id="entreeTemplate">
 		
-			<div>
+			
 				{{#entree}}
-
+					<div>
 					<ul id="entree">
 						<li class="entreeList">{{id}}</li>
 						<li class="entreeList">{{item}}</li>
@@ -178,9 +186,9 @@
 						<li class="entreeList">Ask our server for vegan options...</li>
 						{{/vegan}}
 					</ul>
-
+				</div>
 				{{/entree}}
-			</div>
+			
 		
 
 		</script>

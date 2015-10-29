@@ -75,6 +75,10 @@ li {
 
 }
 
+#navList li:hover {
+	color:#939393;
+}
+
 #bodyContainer {
 	position: relative;
 	background: #ECE4D4;
@@ -97,14 +101,14 @@ li {
 
 #reviews {
 	height:275px;
-	width:600px;
+	width:100%;
 
 	position: relative;
 	top:25px;
 	color: #676767;
 	font-size: 24px;
 	padding:0 20px 0 20px;
-	display: block;
+	display: inline;
 
 }
 
@@ -113,6 +117,8 @@ li {
 	margin:0;
 	position: relative;
 	width:100%;
+	display: inline;
+
 	
 
 }
@@ -124,7 +130,37 @@ li {
 	position: relative;
 	top:100px;
 	border-radius:5px;
+	clear: right;
 
+
+}
+
+#newsContainer {
+	margin:20px;
+	top:40px;
+	position: relative;
+	height:300px;
+
+}
+
+#welcome {
+	font-size: 20px;
+	text-align: center;
+}
+
+#post {
+	padding:25px;
+	background:#fff;
+}
+
+#dateAdded {
+	position: relative;
+	float: left;
+	background-color: #fff;
+	padding:5px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	top:6px;
 }
 
 #experience p {
@@ -132,6 +168,7 @@ li {
 	top:50px;
 	padding:20px;
 	text-align: justify;
+
 
 }
 
@@ -196,12 +233,19 @@ li {
 	padding:5px;
 	width:300px;
 }
-#newsContainer {
-	background:#F7F7F7;
-	top:120px;
+
+.beerDiv{
+	width:350px;
 	position: relative;
-	height:300px;
+	
+
 }
+
+
+
+
+
+
 
 #entreeContainer {
 	background:#F7F7F7;
@@ -209,7 +253,4 @@ li {
 	height:1200px;
 }
 
-#beerContainer {
-
-}
 
