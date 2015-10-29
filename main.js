@@ -98,7 +98,7 @@ $(document).ready(function(){
 
 	var specialTemplate = $("#specialTemplate").text();
 		var specialHTML = Mustache.render(specialTemplate,specialGet);
-		$("#lastMeal").html(specialHTML);
+		$("#lastMeal").append(specialHTML);
 		
 
 });

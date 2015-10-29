@@ -9,6 +9,8 @@ body {
 	background:#4b4856;
 
 }
+
+
 #socialDiv {
 	height:50px;
 }
@@ -21,11 +23,17 @@ body {
 	height:150px;
 	width: 1250px;
 	margin:auto;
-	background-image:url("logo.png");
+	background-image:url("https://placehold.it/1250x150");
 	background-repeat: no-repeat;
 	
 }
+ul {
+	margin:0;
+}
 
+li {
+	list-style: none;
+}
 
 #socialList {
 	position: relative;
@@ -37,7 +45,7 @@ body {
 #socialList li {
 	float: left;
 	margin:10px;
-	list-style: none;
+	
 }
 #imgBanner {
 	width:100%;
@@ -133,6 +141,8 @@ body {
 	height: 250px;
 	width:250px;
 	margin:auto;
+	color: white;
+	text-align: center;
 }
 #special {
 	color: white;
@@ -177,10 +187,15 @@ body {
 }
 
 .entreeList {
-	list-style: none;
+	
 	padding:5px;
 	width:300px;
 	
+}
+
+.beerList {
+	padding:5px;
+	width:500px;
 }
 #newsContainer {
 	background:#F7F7F7;
