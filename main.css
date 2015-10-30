@@ -7,7 +7,7 @@
 
 body {
 	background:#ECE4D4;
-
+	font-family: "Abel";
 }
 
 
@@ -144,7 +144,7 @@ li {
 }
 
 #newsContainer {
-	top:150px;
+	top:142px;
 	position: relative;
 	margin-bottom: 175px;
 
@@ -200,18 +200,11 @@ li {
 
 #beerContainer {
 	background:white;
-
-
-
-}
-
-#footer {
-	position: relative;
-	height:250px;
-	width:100%;
-	background:orange;
+	padding-top: 25px;
 
 }
+
+
 
 .imgGal {
 	height:65%;
@@ -245,7 +238,7 @@ li {
 #entreeContainer {
 	background:white;
 	position: relative;
-	padding-top: 25px
+	padding-top: 25px;
 
 }
 
@@ -258,9 +251,25 @@ hr {
 
 }
 
+#entreeDiv hr:last-child() {
+	display: none;
+}
+
 #price {
 	position: absolute;
 	right:5px;
 }
 
+#priceBeer {
+	float: right;
+}
+
+#footer {
+	position: relative;
+	height:150px;
+	width:100%;
+	background:orange;
+	top:40px;
+
+}
 

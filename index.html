@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Orange is the New Chicken</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	
 </head>
@@ -130,9 +131,9 @@
 		{{#beer}}
 		<div class="beerDiv">
 			<ul>
-				
+				<li  id="priceBeer" class="beerList">${{price}}.00</li>
 				<li class="beerList" id="beerName">{{item}}</li>
-				<li class="beerList" id="beerPrice">${{price}}.00</li>
+				
 				<li class="beerList" id="beerStyle">{{style}}</li>
 				<li class="beerList" id="abv">ABV: {{abv}}</li>
 				<li class="beerList" id="beerDes">{{description}}</li>
