@@ -54,32 +54,66 @@ li {
 	height:50px;
 	background-color:#e75505;
 	width:1250px;
+	position: relative;
+	margin-bottom:85px;
 	
 }
 #navList {
 	margin:0;
 	margin:auto;
+	position: relative;
 
 
 }
 
-#navList li{
-	position: relative;
+.main {
+
 	float: left;
 	list-style: none;
 	margin-right:80px;
 	padding-left: 15px;
 	padding-right: 15px;
 	left:300px;
+	position: relative;
 	top:15px;
 	color:white;
 
 }
+#subMenu {
+	position: absolute;
+	top:35px;
+	right:-82px;
+	margin-right: 10px;
+	width:120px;
+	color:white;
+	background-color: orange;
+	padding-left:5px;
+	display: block;
+	padding-left: 15px;
 
-#navList li:hover {
+}
+
+.subMenuLi:hover {
+	color: black;
+}
+
+#menu:hover #subMenu {
+	display: block;
+}
+
+#navList .main:hover {
 	border-bottom: 3px solid black;
 	color: black;
 	padding-bottom: 11px;
+}
+
+
+
+#subMenu li {
+	width:120px;
+	display: block;
+	
+	
 }
 
 #bodyContainer {
@@ -87,6 +121,7 @@ li {
 	background: #ECE4D4;
 	width:1000px;
 	margin:auto;
+
 }
 
 #specialContainer {
@@ -300,7 +335,7 @@ li {
 	top:5px;
 	left:400px;
 	width:500px;
-	border:1px dashed;
+	border:1px dotted gray;
 }
 
 #entreeDiv hr:last-child() {
