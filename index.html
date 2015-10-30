@@ -31,10 +31,10 @@
 		<ul id="navList">
 			<li id="menu" class="main">Menu
 				<ul id="subMenu">
-					<li class="subMenuLi"><a id="appjump"></a>Appetizers</li>
-					<li class="subMenuLi">Entrees</li>
-					<li class="subMenuLi">A la carte</li>
-					<li class="subMenuLi">Drinks</li>
+					<li class="subMenuLi"><a href="#appjump">Appetizers</a></li>
+					<li class="subMenuLi"><a href="#entreejump">Entrees</a></li>
+					<li class="subMenuLi"><a href="#cartejump">A la carte</a></li>
+					<li class="subMenuLi"><a href="#drinkJump">Drinks</a></li>
 				</ul>
 			</li>
 			<li id="reservationLi" class="main">Make Reservation</li>
@@ -79,20 +79,31 @@
 	
 		<div id="newsContainer"></div>
 
-		<h3>Appetizers</h3>
-		<a id="appjump"/>
+		<h3<a id="appjump">Appetizers</h3>
+		
+
+		<div class="imgGallery">
+			<a data-flickr-embed="true"  href="https://www.flickr.com/photos/yourhomebasedmom/8192557780/in/photolist-dtX11d-au4xHH-uwtuP-dtRtPD-dXFSBf-dPvZK4-8CdZXq-tBvjgL-6V8xS-5CzR9K-9mzdvu-7WxMPt-7syFLw-oUkru4-pVG2Xw-5LnGEf-pUW98H-49ddbz-52aoxE-5268Q2-48DFNZ-5LnGN7-5LnH7Y-7TroDD-8BPmMw-9DawRj-8WXPvL-fABmb9-cJzj39-rhaW7T-b7wEgF-dhDvmh-hPSr9m-ehCUkL-dEsVEa-dtRqRP-dtX12Y-dtRqQH-49johG-wVd3k-zN49Ah-j8veKL-bQbcuR-dvFTxC-bjzTbu-8S3BJi-dEWV5s-3pCjGB-dtD4ni-ehNM7z" title="Italian Turkey Soup"><img src="https://farm9.staticflickr.com/8199/8192557780_839528230c_m.jpg" width="240" height="159" alt="Italian Turkey Soup"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+			<a data-flickr-embed="true"  href="https://www.flickr.com/photos/yourhomebasedmom/8192557780/in/photolist-dtX11d-au4xHH-uwtuP-dtRtPD-dXFSBf-dPvZK4-8CdZXq-tBvjgL-6V8xS-5CzR9K-9mzdvu-7WxMPt-7syFLw-oUkru4-pVG2Xw-5LnGEf-pUW98H-49ddbz-52aoxE-5268Q2-48DFNZ-5LnGN7-5LnH7Y-7TroDD-8BPmMw-9DawRj-8WXPvL-fABmb9-cJzj39-rhaW7T-b7wEgF-dhDvmh-hPSr9m-ehCUkL-dEsVEa-dtRqRP-dtX12Y-dtRqQH-49johG-wVd3k-zN49Ah-j8veKL-bQbcuR-dvFTxC-bjzTbu-8S3BJi-dEWV5s-3pCjGB-dtD4ni-ehNM7z" title="Italian Turkey Soup"><img src="https://farm9.staticflickr.com/8199/8192557780_839528230c_m.jpg" width="240" height="159" alt="Italian Turkey Soup"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+			<a data-flickr-embed="true"  href="https://www.flickr.com/photos/yourhomebasedmom/8192557780/in/photolist-dtX11d-au4xHH-uwtuP-dtRtPD-dXFSBf-dPvZK4-8CdZXq-tBvjgL-6V8xS-5CzR9K-9mzdvu-7WxMPt-7syFLw-oUkru4-pVG2Xw-5LnGEf-pUW98H-49ddbz-52aoxE-5268Q2-48DFNZ-5LnGN7-5LnH7Y-7TroDD-8BPmMw-9DawRj-8WXPvL-fABmb9-cJzj39-rhaW7T-b7wEgF-dhDvmh-hPSr9m-ehCUkL-dEsVEa-dtRqRP-dtX12Y-dtRqQH-49johG-wVd3k-zN49Ah-j8veKL-bQbcuR-dvFTxC-bjzTbu-8S3BJi-dEWV5s-3pCjGB-dtD4ni-ehNM7z" title="Italian Turkey Soup"><img src="https://farm9.staticflickr.com/8199/8192557780_839528230c_m.jpg" width="240" height="159" alt="Italian Turkey Soup"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+		
+
+	<div id="appAccord">
 		<div id="appetizerContainer"></div>
+	</div>
 
 
-
-		<h3>Entrees</h3>
+		<h3<a id="entreejump">Entrees</a></h3>
 
 		<div id="entreeContainer"></div>
-		<h3>A la Cart&eacute; 
+		<h3<a id="cartejump">A la Cart&eacute;</a></h3>
 
 		<div id="sidesContainer"></div>
 
-		<h3>Drinks</h3>
+		<h3<a id="drinkJump">Drinks</a></h3>
 
 		<div id="beerContainer"></div>
 
@@ -245,10 +256,10 @@
 
 		{{#beer}}
 		<div class="beerDiv">
-		<hr class="dotted"/>
+		
 			<ul>
 				<li  id="priceBeer" class="beerList">{{price}}</li>
-				<li class="beerList" id="beerName">{{item}}</li>
+				<li class="beerList" class="itemName" id="beerName">{{item}}</li>
 				
 				<li class="beerList" id="beerStyle">{{style}}</li>
 				<li class="beerList" id="abv">ABV: {{abv}}</li>
@@ -288,7 +299,7 @@
 					<div id="entreDiv">
 					<ul id="entree">
 						<li id="price">{{price}}</li>
-						<li class="entreeList">{{item}}</li>
+						<li class="entreeList" "itemName">{{item}}</li>
 
 						
 						<li class="entreeList">{{description}}</li>
@@ -329,7 +340,7 @@
 			
 					<ul id="appetizer">
 					<li id="appPrice" class="appetizerList">{{price}}</li>
-					<li class="appetizerList">{{item}}</li>
+					<li class="appetizerList" "itemName">{{item}}</li>
 					<li class="appetizerList">{{description}}</li>
 					{{#allergies}}
 					<li class="appetizerList">This item may contain shellfish or another item some people may be allergic to. Please ask your waiter for assistance</li>
