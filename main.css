@@ -297,7 +297,7 @@ hr {
 	top:250px;
 	left:300px;
 	border-radius: 5px;
-	background-color: red;
+	background-color: #90AFC5;
 }
 
 #reservation {
@@ -312,7 +312,7 @@ hr {
 	position: relative;
 	margin-bottom:15px;
 	color:white;
-	background-color: blue;
+	background-color: #336B87;
 
 }
 
@@ -323,6 +323,9 @@ hr {
 	border:1px solid black;
 	margin-bottom: 25px;
 	border-radius: 3px;
+	background:#fff;
+	outline:none;
+	padding-left: 10px;
 }
 
 
@@ -336,7 +339,7 @@ hr {
 #submit {
 	height:50px; 
 	width:120px;
-	background-color: blue;
+	background-color: #336B87;
 	color:white;
 	outline:none;
 	border:none;
