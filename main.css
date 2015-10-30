@@ -259,6 +259,11 @@ li {
 	display: block;
 }
 
+.sidesList {
+	padding:2px;
+	display: block;
+}
+
 .beerDiv{
 	position: relative;
 	
