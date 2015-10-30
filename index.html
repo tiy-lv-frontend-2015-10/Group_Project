@@ -21,7 +21,7 @@
 		</ul>
 	</div>
 	<div id="wrapper">
-		<div id="logo"></div>
+		<div id="imageBanner"></div>
 	
 	</div>
 	
@@ -42,7 +42,7 @@
 			<h4 id="dailySpecial">Inmates Last meal</h4>
 
 			<div id="lastMeal"></div>
-			<div id="idk"></div>
+			
 		</div>
 
 	
@@ -69,9 +69,19 @@
 	
 	
 		<div id="newsContainer"></div>
+
+		<h3>Appetizers</h3>
+
+		<div id="appetizerContainer"></div>
+
 		<h3>Entrees</h3>
+
 		<div id="entreeContainer"></div>
+
+		
+
 		<h3>Drinks</h3>
+
 		<div id="beerContainer"></div>
 
 		
@@ -282,6 +292,30 @@
 		
 
 		</script>
+
+
+		<script type="x-tmpl-mustache" id="appetizerTemplate">
+			{{#appetizer}}
+
+			<div id="appetizerDiv">
+			
+					<ul id="appetizer">
+					<li class="appetizerList">{{item}}</li>
+					<li class="appetizerList">{{price}}</li>
+					<li class="appetizerList">{{description}}</li>
+					<li class="appetizerList">{{allegies}}</li>
+					<li class="appetizerList">{{favorite}}</li>
+					<li class="appetizerList">{{spicy}}</li>
+					<li class="appetizerList">{{vegan}}</li>
+					</ul>
+						
+			{{/appetizer}}
+
+		</script>
+
+
+
+
 		<!--<li class="entreeList">{{id}}</li>
 		 <li class="beerList" id="beerid">{{id}}</li>-->
 

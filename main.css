@@ -15,7 +15,20 @@ body {
 	height:50px;
 }
 
-#logo {
+#socialList {
+	position: relative;
+	float: right;
+
+	right: 20px;
+}
+
+#socialList li {
+	float: left;
+	margin:10px;
+	
+}
+
+#imageBanner {
 	position: relative;
 	height:150px;
 	width:1250px;
@@ -33,23 +46,8 @@ li {
 	list-style: none;
 }
 
-#socialList {
-	position: relative;
-	float: right;
 
-	right: 20px;
-}
 
-#socialList li {
-	float: left;
-	margin:10px;
-	
-}
-#imgBanner {
-	
-	height:150px;
-	background-image: url("http://placehold.it/1100x150");
-}
 
 #navBar {
 	margin: auto;
@@ -166,6 +164,19 @@ li {
 
 }
 
+#entreeContainer {
+	background:white;
+	position: relative;
+	padding-top: 25px;
+
+}
+#appetizerContainer {
+	background:white;
+	position: relative;
+	padding-top: 25px;
+
+}
+
 #welcome {
 	font-size: 20px;
 	text-align: center;
@@ -252,12 +263,7 @@ li {
 	
 }
 
-#entreeContainer {
-	background:white;
-	position: relative;
-	padding-top: 25px;
 
-}
 
 
 hr {

@@ -114,11 +114,67 @@ $(document).ready(function(){
  });
 	  
 	
+var appetizerUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 
+	$.ajax({
+		url:appetizerUrl,
+		method: 'get',
+		dataType: 'json',
+	}).then(function(appsides){
+		
+		var appetizer=appsides.appetizers.map(function(obj){
+			return {
+				"id": obj.id,
+				"item": obj.item,
+				"price":obj.price,
+				"description":obj.description,
+				"allergies":obj.allergies,
+				"favorite":obj.favorite,
+				"spicy":obj.spicy,
+				"vegan":obj.vegan
+			};
+		});
+	
+		appetizerGet={
+			appetizer:appetizer
+		};
+
+		var appetizerTemplate= $("#appetizerTemplate").text();
+		var appetizerHTML = Mustache.render(appetizerTemplate,appetizerGet);
+		$("#appetizerContainer").html(appetizerHTML);
+		console.log(appetizerGet);
+
+});
+
+
+var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
+
+	$.ajax({
+		url:sidesUrl,
+		method:'get',
+		dataType:'json',
+	}).then(function(regSides){
+		var sides = regSides.sides.map(function(obj){
+			return {
+				"id": obj.id.
+				"item": obj.item,
+				"price":obj.price,
+				"description":obj.description,
+				"allergies":obj.allergies,
+				"favorite":obj.favorite,
+				"spicy":obj.spicy,
+				"vegan":obj.vegan
+					};
+		});
 	
 
+	sidesGet= {
+
+	}
 
 
+
+});
 
 
 
