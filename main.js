@@ -175,11 +175,13 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 	var sidesTemplate = $("#sidesTemplate").text();
 	var sidesHTML = Mustache.render(sidesTemplate,sidesGet);
 	$("#sidesContainer").html(sidesHTML);
-		
+
 });
 
 
-
+$("#appetizerBtn").on('click',function(){
+	$("#appAccord").toggleClass("hidden");
+});
 
 
 
