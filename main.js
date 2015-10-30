@@ -109,6 +109,8 @@ $(document).ready(function(){
 
  $("#reservationLi").on("click", function(){
  	$("#reservationForm").toggleClass("hidden");
+ 	$("#masterDiv").toggleClass("blur");
+
  });
 	  
 	

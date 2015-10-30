@@ -303,6 +303,13 @@ hr {
 .hidden {
 	display: none;
 }
+.displayBlock {
+	display: block;
+}
+
+.blur {
+	filter: blur(5px)
+}
 
 
 #reservation {
@@ -311,6 +318,7 @@ hr {
 	margin:0;
 	position: relative;
 	top:15px;
+
 }
 #formHeader {
 	height:60px;
@@ -318,6 +326,7 @@ hr {
 	margin-bottom:15px;
 	color:white;
 	background-color: #336B87;
+	z-index: 2;
 
 }
 
