@@ -156,7 +156,7 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 	}).then(function(regSides){
 		var sides = regSides.sides.map(function(obj){
 			return {
-				"id": obj.id.
+				"id": obj.id,
 				"item": obj.item,
 				"price":obj.price,
 				"description":obj.description,
@@ -169,11 +169,13 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 	
 
 	sidesGet= {
+		sides:sides
+	};
 
-	}
-
-
-
+	var sidesTemplate = $("#sidesTemplate").text();
+	var sidesHTML = Mustache.render(sidesTemplate,sidesGet);
+	$("#sidesContainer").html(sidesHTML);
+		
 });
 
 

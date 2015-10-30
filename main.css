@@ -177,6 +177,13 @@ li {
 
 }
 
+#sidesContainer {
+	background:white;
+	position: relative;
+	padding-top: 25px;
+
+}
+
 #welcome {
 	font-size: 20px;
 	text-align: center;

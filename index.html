@@ -74,11 +74,13 @@
 
 		<div id="appetizerContainer"></div>
 
+
+
 		<h3>Entrees</h3>
 
 		<div id="entreeContainer"></div>
 
-		
+		<div id="sidesContainer"></div>
 
 		<h3>Drinks</h3>
 
@@ -313,6 +315,25 @@
 
 		</script>
 
+
+		<script type="x-tmpl-mustache" id="sidesTemplate">
+				{{#sides}}
+					<div id="sidesDiv">
+						<ul>
+							<li class="sidesList">{{item}}</li>
+							<li class="sidesList">{{price}}</li>
+							<li class="sidesList">{{description}}</li>
+							<li class="sidesList">{{allegies}}</li>
+							<li class="sidesList">{{favorite}}</li>
+							<li class="sidesList">{{spicy}}</li>
+							<li class="sidesList">{{vegan}}</li>
+
+						</ul>
+					</div>
+				{{/sides}}
+
+		</script>
+		
 
 
 
