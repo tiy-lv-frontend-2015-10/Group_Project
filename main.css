@@ -251,17 +251,26 @@ li {
 }
 
 .entreeList {
-	padding:5px;
+	padding:2px;
+	padding-left: 16px;
 }
 
 .beerList {
 	padding:2px;
-	display: block;
+	padding-left: 16px;
+	padding-right: 4px;
 }
 
 .sidesList {
 	padding:2px;
-	display: block;
+	padding-left: 16px;
+	padding-right: 4px;
+}
+
+.appetizerList {
+	padding:2px;
+	padding-left: 16px;
+	padding-right: 4px;
 }
 
 .beerDiv{
@@ -278,12 +287,20 @@ li {
 
 
 
-hr {
+.spear {
 	
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 2, 0, 0), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
 
+}
+
+.dotted {
+	position: absolute;
+	top:5px;
+	left:400px;
+	width:500px;
+	border:1px dashed;
 }
 
 #entreeDiv hr:last-child() {
@@ -297,6 +314,16 @@ hr {
 
 #priceBeer {
 	float: right;
+}
+
+#sidesPrice {
+	position: absolute;
+	right:5px;
+}
+
+#appPrice {
+	position: absolute;
+	right:5px;
 }
 
 #footer {

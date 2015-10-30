@@ -223,8 +223,9 @@
 
 		{{#beer}}
 		<div class="beerDiv">
+		<hr class="dotted"/>
 			<ul>
-				<li  id="priceBeer" class="beerList">${{price}}.00</li>
+				<li  id="priceBeer" class="beerList">{{price}}</li>
 				<li class="beerList" id="beerName">{{item}}</li>
 				
 				<li class="beerList" id="beerStyle">{{style}}</li>
@@ -249,7 +250,7 @@
 
 
 		</div>	
-		<hr />
+		<hr class="spear" />
 		{{/beer}}
 
 		
@@ -264,7 +265,7 @@
 				{{#entree}}
 					<div id="entreDiv">
 					<ul id="entree">
-						<li id="price">${{price}}.00</li>
+						<li id="price">{{price}}</li>
 						<li class="entreeList">{{item}}</li>
 
 						
@@ -291,7 +292,7 @@
 					</ul>
 				</div>
 
-				<hr />
+				<hr class="spear" />
 				{{/entree}}
 			
 		
@@ -305,7 +306,7 @@
 			<div id="appetizerDiv">
 			
 					<ul id="appetizer">
-					<li class="appetizerList">${{price}}.00</li>
+					<li id="appPrice" class="appetizerList">{{price}}</li>
 					<li class="appetizerList">{{item}}</li>
 					<li class="appetizerList">{{description}}</li>
 					{{#allergies}}
@@ -315,7 +316,7 @@
 					{{/allergies}}
 					
 					{{#favorite}}
-					<li class="appetizerList">{{favorite}}</li>
+					<li class="appetizerList">We have been doing this a long time and this item has become one of our favorites.</li>
 					{{/favorite}}
 					{{^favorite}}
 					{{/favorite}}
@@ -334,7 +335,7 @@
 
 					</ul>
 			</div>
-			<hr />			
+			<hr class="spear"/>			
 			{{/appetizer}}
 
 		</script>
@@ -344,8 +345,8 @@
 				{{#sides}}
 					<div id="sidesDiv">
 						<ul>
+							<li  id="sidesPrice" class="sidesList">{{price}}</li>
 							<li class="sidesList">{{item}}</li>
-							<li class="sidesList">{{price}}</li>
 							<li class="sidesList">{{description}}</li>
 							{{#allergies}}
 							<li class="sidesList">{{allergies}}</li>
@@ -354,7 +355,7 @@
 							{{/allergies}}
 					
 							{{#favorite}}
-							<li class="sidesList">{{favorite}}</li>
+							<li class="sidesList">We have been doing this a long time and this item has become one of our favorites.</li>
 							{{/favorite}}
 							{{^favorite}}
 							{{/favorite}}
