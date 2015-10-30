@@ -298,7 +298,12 @@ hr {
 	left:300px;
 	border-radius: 5px;
 	background-color: #90AFC5;
+
 }
+.hidden {
+	display: none;
+}
+
 
 #reservation {
 	text-align: center;

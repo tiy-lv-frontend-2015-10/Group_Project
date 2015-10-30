@@ -104,7 +104,12 @@ $(document).ready(function(){
 });
 
 
- $("#datepicker").datepicker(); 
+ 
+
+
+ $("#reservationLi").on("click", function(){
+ 	$("#reservationForm").toggleClass("hidden");
+ });
 	  
 	
 
