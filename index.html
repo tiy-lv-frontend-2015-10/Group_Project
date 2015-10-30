@@ -33,12 +33,12 @@
 	<div id="bodyContainer">
 	
 		<div id="specialContainer">
-
+			<h4 id="location">Our Location</h4>
 			<div><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.3355902079024!2d-115.15467894947072!3d36.158387479988036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab244a1cb%3A0xd0b332727ed859dc!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1446084095351" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
-			<div id="lastMeal">
-				<span>Inmates Last Meal</span>
-			</div>
+			<h4 id="dailySpecial">Inmates Last meal</h4>
+
+			<div id="lastMeal"></div>
 			<div id="idk"></div>
 		</div>
 
@@ -76,7 +76,76 @@
 
 	<div id="footer"></div>
 
-	
+	<div id="reservationForm">
+		
+		<div id="formHeader">
+			<h3 id="reservation">Make a Reservation</h3>
+		</div>
+
+			
+		
+
+		<div id="formData">
+
+		
+			<span>Your Name: </span><input id="fullName" class="formInput" placeholder="Full Name" />
+			<span>Pick a Date: </span><input  id="date" class="formInput" type="date"/>
+			<span>Choose a Time: </span><select id="time" class="formInput">	
+					<option value="4:00 PM">4:00 PM</option>
+				    <option value="4:15 PM">4:15 PM</option>
+				    <option value="4:30 PM">4:30 PM</option>
+				    <option value="4:45 PM">4:45 PM</option>
+
+				    <option value="5:00 PM">5:00 PM</option>
+				    <option value="5:15 PM">5:15 PM</option>
+				    <option value="5:30 PM">5:30 PM</option>
+				    <option value="5:45 PM">5:45 PM</option>
+
+				    <option value="6:00 PM">6:00 PM</option>
+				    <option value="6:15 PM">6:15 PM</option>
+				    <option value="6:30 PM">6:30 PM</option>
+				    <option value="6:45 PM">6:45 PM</option>
+
+				    <option value="7:00 PM">7:00 PM</option>
+				    <option value="7:15 PM">7:15 PM</option>
+				    <option value="7:30 PM">7:30 PM</option>
+				    <option value="7:45 PM">7:45 PM</option>
+
+				    <option value="8:00 PM">8:00 PM</option>
+				    <option value="8:15 PM">8:15 PM</option>
+				    <option value="8:30 PM">8:30 PM</option>
+				    <option value="8:45 PM">8:45 PM</option>
+
+				    <option value="9:00 PM">9:00 PM</option>
+				    <option value="9:15 PM">9:15 PM</option>
+				    <option value="9:30 PM">9:30 PM</option>
+				    <option value="9:45 PM">9:45 PM</option>
+
+				    <option value="10:00 PM">10:00 PM</option>
+				    <option value="10:15 PM">10:15 PM</option>
+				    <option value="10:30 PM">10:30 PM</option>
+				    <option value="10:45 PM">10:45 PM</option>
+
+				    <option value="11:00 PM">11:00 PM</option>
+				    <option value="11:15 PM">11:15 PM</option>
+				    <option value="11:30 PM">11:30 PM</option>
+				    <option value="11:45 PM">11:45 PM</option>
+			</select>
+			<span># of People: </span><select id="people" class="formInput">
+				<option value="">1</option>
+				<option value="">2</option>
+				<option value="">3</option>
+				<option value="">4</option>
+				<option value="">5</option>
+				<option value="">6</option>
+				<option value="">7</option>
+				<option value="">8</option>
+				<option value="">9</option>
+			</select>
+			<button id="submit">Submit</button>
+
+		</div>
+	</div>
 	
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.js"></script>

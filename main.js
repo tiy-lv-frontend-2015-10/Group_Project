@@ -98,10 +98,14 @@ $(document).ready(function(){
 
 	var specialTemplate = $("#specialTemplate").text();
 		var specialHTML = Mustache.render(specialTemplate,specialGet);
-		$("#lastMeal").append(specialHTML);
+		$("#lastMeal").html(specialHTML);
 		
 
 });
+
+
+ $("#datepicker").datepicker(); 
+	  
 	
 
 	
