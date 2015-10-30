@@ -27,14 +27,19 @@ body {
 	margin:10px;
 	
 }
-
 #imageBanner {
-	position: relative;
 	height:150px;
 	width:1250px;
+	overflow: hidden;
 	margin:auto;
-	background-image:url("https://placehold.it/1250x150");
-	background-repeat: no-repeat;
+
+
+}
+#imageBanner img{
+	position: relative;
+	width:1250px;
+	background-position: 55% 50%;
+	
 	
 }
 ul {
