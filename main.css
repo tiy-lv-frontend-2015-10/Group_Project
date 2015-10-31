@@ -1,8 +1,28 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=maki|typicons|zocial);
+
+/* maki */
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+  color:red;
+}
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+[class*="typicons-star"]:before {
+  font-family: 'Typicons', sans-serif;
+  color:#D4AF37;
+}
 
 /* zocial */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
+}
+[class*="zocial-plancast"]:before {
+  font-family: 'zocial', sans-serif;
+  color:blue;
 }
 
 body {
@@ -328,6 +348,8 @@ a {
 	padding-left: 16px;
 	padding-right: 4px;
 }
+
+
 
 
 
