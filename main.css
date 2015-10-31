@@ -18,7 +18,6 @@ body {
 #socialList {
 	position: relative;
 	float: right;
-
 	right: 20px;
 }
 
@@ -42,6 +41,8 @@ body {
 	
 	
 }
+
+
 ul {
 	margin:0;
 	padding:0;
@@ -410,10 +411,12 @@ a {
 
 }
 .hidden {
-	display: none;
+	max-height: 0;
+	overflow: hidden;
 }
 .displayBlock {
 	display: block;
+	
 }
 
 .blur {
@@ -467,5 +470,10 @@ a {
 	outline:none;
 	border:none;
 	border-radius: 3px;
+}
+
+#appAcord {
+	transition: max-height .5s;
+	overflow: hidden;
 }
 	

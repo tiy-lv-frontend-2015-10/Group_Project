@@ -207,7 +207,12 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 
 
 
+$(function(){
+	$("#appetizerBtn").on("click",function(){
+$("appAccord").toggleClass(scroll);
+});
 
+});
 
 
 
