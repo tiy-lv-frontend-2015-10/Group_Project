@@ -181,25 +181,34 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 
  $("#appetizerBtn").on("click", function(){
  	$("#appAccord").toggleClass("displayBlock");
- 	
+ 	clear("#beerAccord");
+ 	clear("#carteAccord");
+ 	clear("#entreeAccord");
 
  });
 
   $("#entreeBtn").on("click", function(){
  	$("#entreeAccord").toggleClass("displayBlock");
- 	
+ 	clear("#appAccord");
+ 	clear("#beerAccord");
+ 	clear("#carteAccord");
 
  });
 
    $("#carteBtn").on("click", function(){
  	$("#carteAccord").toggleClass("displayBlock");
- 	
+ 	clear("#entreeAccord");
+ 	clear("#appAccord");
+ 	clear("#beerAccord");
 
  });
 
 
  $("#beerBtn").on("click", function(){
  	$("#beerAccord").toggleClass("displayBlock");
+ 	clear("#entreeAccord");
+ 	clear("#appAccord");
+ 	clear("#carteAccord");
  	
 
  });
@@ -207,12 +216,9 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 
 
 
-$(function(){
-	$("#appetizerBtn").on("click",function(){
-$("appAccord").toggleClass(scroll);
-});
-
-});
+ function clear(clear) {
+ 	$(clear).removeClass("displayBlock");
+}
 
 
 
