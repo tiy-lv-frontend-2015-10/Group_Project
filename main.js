@@ -216,9 +216,39 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 
 
 
- function clear(clear) {
- 	$(clear).removeClass("displayBlock");
-}
+
+
+ var clear=function(x){
+ 	$(x).removeClass("displayBlock");
+};
+
+$("#li_1").on("click",function(){
+	$("#appAccord").toggleClass("displayBlock");
+	clear("#beerAccord");
+ 	clear("#carteAccord");
+ 	clear("#entreeAccord");
+});
+
+$("#li_2").on("click",function(){
+	$("#entreeAccord").toggleClass("displayBlock");
+	clear("#appAccord");
+ 	clear("#beerAccord");
+ 	clear("#carteAccord");
+});
+
+$("#li_3").on("click",function(){
+	$("#carteAccord").toggleClass("displayBlock");
+	clear("#entreeAccord");
+ 	clear("#appAccord");
+ 	clear("#beerAccord");
+});
+
+$("#li_4").on("click",function(){
+	$("#beerAccord").toggleClass("displayBlock");
+	clear("#entreeAccord");
+ 	clear("#appAccord");
+ 	clear("#carteAccord");
+});
 
 
 
