@@ -180,26 +180,26 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 
 
  $("#appetizerBtn").on("click", function(){
- 	$("#appAccord").toggleClass("hidden");
+ 	$("#appAccord").toggleClass("displayBlock");
  	
 
  });
 
   $("#entreeBtn").on("click", function(){
- 	$("#entreeAccord").toggleClass("hidden");
+ 	$("#entreeAccord").toggleClass("displayBlock");
  	
 
  });
 
    $("#carteBtn").on("click", function(){
- 	$("#carteAccord").toggleClass("hidden");
+ 	$("#carteAccord").toggleClass("displayBlock");
  	
 
  });
 
 
  $("#beerBtn").on("click", function(){
- 	$("#beerAccord").toggleClass("hidden");
+ 	$("#beerAccord").toggleClass("displayBlock");
  	
 
  });

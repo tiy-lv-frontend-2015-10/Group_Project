@@ -413,9 +413,11 @@ a {
 .hidden {
 	max-height: 0;
 	overflow: hidden;
+	max-height: 2s;
 }
 .displayBlock {
-	display: block;
+	max-height: 1240px;
+    transition: max-height 2.8s;
 	
 }
 
