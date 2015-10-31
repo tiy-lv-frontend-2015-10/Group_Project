@@ -37,14 +37,15 @@ body {
 	overflow: hidden;
 	margin:auto;
 
+	
+
 
 }
 #imageBanner img{
 	position: relative;
 	width:1250px;
-	background-position: 55% 50%;
-	
-	
+	height:100px;
+	background-position: center;
 }
 
 
@@ -159,6 +160,12 @@ a {
 	color: #fff;
 	position: relative;
 	left:10px;
+}
+
+#dailyImg {
+	position: relative;
+	left:25px;
+
 }
 
 #reviews {
@@ -391,19 +398,27 @@ a {
 .aBtn {
 	display: block;
 	width:100%;
-	height:70px;
+	text-align: none;
+	height:50px;
 	background-color: #D3D3D3;
 	outline: none;
 	border:1px solid #F7F7F7;
 	color:black;
+	padding-left: 10px;
+}
+
+.aBtn span {
+	position: relative;
+	top:15px;
 }
 
 #footer {
 	position: relative;
 	height:150px;
-	width:100%;
+	width:1250px;
 	background:orange;
 	top:40px;
+	margin: auto;
 
 }
 
@@ -488,4 +503,56 @@ a {
 	transition: max-height .5s;
 	overflow: hidden;
 }
+
+.footer-icons p {
+	margin:0;
+}
+
+#footerUl li  {
+	float: left;
+	margin:10px;
 	
+}
+
+#footerUl {
+	height:50px;
+	margin-bottom: 10px;
+}
+
+
+
+.copyright {
+	float: left;
+	position: relative;
+	top:10px;
+}
+
+.gal-img {
+	height:240px;
+	width:240px;
+}
+
+#cor-container {
+	height:240px;
+	width:240px;
+}
+
+.img {
+	height:240px;
+	width:240px;
+	overflow: hidden;
+	display: inline;
+}
+.imgGallery {
+	width:700px;
+	margin:auto;
+
+}
+
+.imgGallery img {
+	margin-left:15px;
+	border-radius: 5px;
+	position: relative;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
