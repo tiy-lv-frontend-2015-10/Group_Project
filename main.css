@@ -214,6 +214,11 @@ a {
 	display: inline;
 }
 
+.pDiv {
+	margin-left: 50px;
+	width:320px;
+}
+
 .reviewDiv {
 	position: relative;
 	width:400px;
