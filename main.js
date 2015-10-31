@@ -179,11 +179,30 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
 });
 
 
-$("#appetizerBtn").on('click',function(){
-	$("#appAccord").toggleClass("hidden");
-});
+ $("#appetizerBtn").on("click", function(){
+ 	$("#appAccord").toggleClass("hidden");
+ 	
+
+ });
+
+  $("#entreeBtn").on("click", function(){
+ 	$("#entreeAccord").toggleClass("hidden");
+ 	
+
+ });
+
+   $("#carteBtn").on("click", function(){
+ 	$("#carteAccord").toggleClass("hidden");
+ 	
+
+ });
 
 
+ $("#beerBtn").on("click", function(){
+ 	$("#beerAccord").toggleClass("hidden");
+ 	
+
+ });
 
 
 
