@@ -39,6 +39,10 @@ body {
 #overlay {
 	height:100%;
 	width:100%;
+	position: absolute;
+	background: gray;
+	z-index: 2;
+	opacity: .5;
 }
 
 #logo {

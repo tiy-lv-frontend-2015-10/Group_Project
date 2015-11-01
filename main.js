@@ -109,8 +109,15 @@ $(document).ready(function(){
 
  $("#reservationLi").on("click", function(){
  	$("#reservationForm").toggleClass("hidden");
- 	$("#overlay").toggleClass("blur");
+ 	$("#overlay").toggleClass("hidden");
 
+ });
+
+ $("#overlay").on("click", function(e){
+ 	if ($(e.target).is("#overlay")) {
+ 		$("#overlay").addClass("hidden");
+ 		$("#reservationForm").addClass("hidden");
+ 	};
  });
 	  
 	
@@ -249,6 +256,10 @@ $("#li_4").on("click",function(){
  	clear("#appAccord");
  	clear("#carteAccord");
 });
+
+
+
+
 
 
 
