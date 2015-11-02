@@ -34,11 +34,12 @@
 body {
 	background:#ECE4D4;
 	font-family: "Abel";
+
 }
 
 
 #overlay {
-	height:100%;
+	height:2000px;
 	width:100%;
 	position: absolute;
 	top:0;
@@ -314,15 +315,9 @@ a {
 }
 
 
-
 #lastMeal {
-	position: relative;
-	top:20px;
-	height: 250px;
-	width:250px;
-	margin:auto;
-	color: white;
-	text-align: center;
+	position: absolute;
+	margin-left:20px;
 }
 
 #special {
@@ -543,6 +538,18 @@ a {
 
 .formInput {
 	width:350px;
+	display: block;
+	height:40px;
+	border:1px solid black;
+	margin-bottom: 25px;
+	border-radius: 3px;
+	background:#fff;
+	outline:none;
+	padding-left: 10px;
+}
+
+#time {
+	width:355px;
 	display: block;
 	height:40px;
 	border:1px solid black;
