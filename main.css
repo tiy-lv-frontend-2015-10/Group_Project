@@ -541,7 +541,7 @@ a {
 	display: block;
 	height:40px;
 	border:1px solid black;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	border-radius: 3px;
 	background:#fff;
 	outline:none;
@@ -549,11 +549,23 @@ a {
 }
 
 #time {
-	width:355px;
+	width:362px;
 	display: block;
 	height:40px;
 	border:1px solid black;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	background:#fff;
+	outline:none;
+	padding-left: 10px;
+}
+
+#people {
+	width:362px;
+	display: block;
+	height:40px;
+	border:1px solid black;
+	margin-bottom: 15px;
 	border-radius: 3px;
 	background:#fff;
 	outline:none;

@@ -122,9 +122,15 @@ $(document).ready(function(){
  });
 
  $("#submit").on("click",function(){
- 	$("#overlay").addClass("hidden");
- 	$("#reservationForm").addClass("hidden");
+
+ 	$("#reservationForm").append("A confirmation has been sent to your email.");
+ 	setTimeout(function() {
+    $('#reservationForm').fadeOut('fast');
+    $("#overlay").fadeOut('fast');
+}, 1000);
+
  });
+
 	  
 	
 var appetizerUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
