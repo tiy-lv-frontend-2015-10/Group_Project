@@ -120,6 +120,11 @@ $(document).ready(function(){
  		$("#reservationForm").addClass("hidden");
  	};
  });
+
+ $("#submit").on("click",function(){
+ 	$("#overlay").addClass("hidden");
+ 	$("#reservationForm").addClass("hidden");
+ });
 	  
 	
 var appetizerUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
