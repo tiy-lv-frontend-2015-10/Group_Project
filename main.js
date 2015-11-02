@@ -123,12 +123,17 @@ $(document).ready(function(){
 
  $("#submit").on("click",function(){
 
- 	$("#reservationForm").append("A confirmation has been sent to your email.");
- 	setTimeout(function() {
-    $('#reservationForm').fadeOut('fast');
-    $("#overlay").fadeOut('fast');
-}, 1000);
+ 	$("#reservationForm").append("<p>A confirmation has been sent to your email.</p>");
+ 	$("#submit").remove();
+ 	$("#close").css("display","block");
+ });
 
+ $("#close").on("click",function(){
+
+ 	$("#reservationForm").toggleClass("hidden");
+  	$("#overlay").toggleClass("hidden");
+ 	
+    
  });
 
 	  
