@@ -17,7 +17,7 @@ $(document).ready(function(){
 		var newsTemplate = $("#newsTemplate").text();
 		var newsHTML = Mustache.render(newsTemplate,newsGet);
 		$("#newsContainer").html(newsHTML);
-		console.log(newsGet);
+		
 
 
 });
@@ -208,7 +208,6 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
  	clear("#beerAccord");
  	clear("#carteAccord");
  	clear("#entreeAccord");
-
  });
 
   $("#entreeBtn").on("click", function(){
@@ -216,7 +215,6 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
  	clear("#appAccord");
  	clear("#beerAccord");
  	clear("#carteAccord");
-
  });
 
    $("#carteBtn").on("click", function(){
@@ -224,7 +222,6 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
  	clear("#entreeAccord");
  	clear("#appAccord");
  	clear("#beerAccord");
-
  });
 
 
@@ -233,13 +230,7 @@ var sidesUrl = "https://json-data.herokuapp.com/restaurant/menu/1";
  	clear("#entreeAccord");
  	clear("#appAccord");
  	clear("#carteAccord");
- 	
-
  });
-
-
-
-
 
 
  var clear=function(x){
@@ -274,36 +265,4 @@ $("#li_4").on("click",function(){
  	clear("#carteAccord");
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
-
-
-
-
-
-
-
-
