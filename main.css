@@ -64,6 +64,9 @@ body {
 	margin:auto;
 }
 
+.description {
+	width:97%;
+}
 
 #overlay {
 	height:2000px;
@@ -120,6 +123,10 @@ ul {
 
 li {
 	list-style: none;
+
+}
+
+#navList li {
 	cursor: pointer;
 }
 
@@ -453,31 +460,12 @@ a {
 	color:green;
 }
 
-#price {
+.price {
 	position: absolute;
 	right:5px;
 	font-size: 18px;
 }
 
-#priceBeer {
-	float: right;
-	font-size: 18px;
-	
-}
-
-#sidesPrice {
-	position: absolute;
-	right:5px;
-	font-size: 18px;
-	
-}
-
-#appPrice {
-	position: absolute;
-	right:5px;
-	font-size: 18px;
-
-}
 .aBtn {
 	display: block;
 	width:100%;

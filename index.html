@@ -107,9 +107,6 @@
 
 					<img src="https://farm1.staticflickr.com/457/19108571123_d0648746d4_m.jpg" width="150" height="150"alt="Scallops">
 
-
-
-
 				</div>
 				<div id="sidesContainer"></div>
 		</div>
@@ -253,8 +250,8 @@
 		<script type="x-tmpl-mustache" id="beerTemplate">
 		{{#beer}}
 		<div class="beerDiv">
-			<ul>
-				<li  id="priceBeer" class="beerList">{{price}}</li>
+			<ul class='description'>
+				<li class="beerList price">{{price}}</li>
 				<li class="beerList" class="itemName" id="beerName">{{item}}</li>
 				<li class="beerList" id="beerStyle">{{style}}</li>
 				<li class="beerList" id="abv">ABV: {{abv}}</li>
@@ -281,8 +278,8 @@
 		<script type="x-tmpl-mustache" id="entreeTemplate">
 			{{#entree}}
 				<div id="entreDiv">
-				<ul id="entree">
-					<li id="price">{{price}}</li>
+				<ul id="entree" class='description'>
+					<li class='price'>{{price}}</li>
 					<li class="entreeList" "itemName">{{item}}</li>
 					<li class="entreeList">{{description}}</li>
 						{{#allergies}}
@@ -311,10 +308,10 @@
 		<script type="x-tmpl-mustache" id="appetizerTemplate">
 			{{#appetizer}}
 			<div id="appetizerDiv">
-				<ul id="appetizer">
-					<li id="appPrice" class="appetizerList">{{price}}</li>
+				<ul id="appetizer" class='description'>
+					<li class="appetizerList price">{{price}}</li>
 					<li class="appetizerList" "itemName">{{item}}</li>
-					<li class="appetizerList">{{description}}</li>
+					<li class="appetizerList description">{{description}}</li>
 						{{#allergies}}
 					<li class="appetizerList maki-hospital">This item may contain shellfish or another item some people may be allergic to. Please ask your waiter for assistance</li>
 						{{/allergies}}
@@ -343,8 +340,8 @@
 		<script type="x-tmpl-mustache" id="sidesTemplate">
 			{{#sides}}
 			<div id="sidesDiv">
-				<ul>
-					<li  id="sidesPrice" class="sidesList">{{price}}</li>
+				<ul class='description'>
+					<li  class="price" class="sidesList">{{price}}</li>
 					<li class="sidesList">{{item}}</li>
 					<li class="sidesList">{{description}}</li>
 						{{#allergies}}
