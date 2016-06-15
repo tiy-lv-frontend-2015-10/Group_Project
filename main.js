@@ -11,9 +11,7 @@ $(document).ready(function(){
 		var newsGet = {
 			news:news
 		};
-
-
-
+		
 		var newsTemplate = $("#newsTemplate").text();
 		var newsHTML = Mustache.render(newsTemplate,newsGet);
 		$("#newsContainer").html(newsHTML);

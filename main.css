@@ -37,6 +37,28 @@ body {
 
 }
 
+@media(max-width: 1250px){
+	body #masterDiv {
+		width:100%;
+	}
+}
+
+@media(max-width: 880px) {
+	body #experience {
+		width:100%;
+	}
+	body .reviewDiv {
+		margin:auto;
+		width:380px;
+	}
+	body .main {
+		top:10px;
+	}
+	body #specialContainer {
+		display: none;
+	}
+}
+
 #masterDiv {
 	width: 1250px;
 	margin:auto;
@@ -54,10 +76,10 @@ body {
 }
 
 #logo {
-	
 	width:115px;
 	position: absolute;
 }
+
 #socialDiv {
 	height:50px;
 	position: absolute;
@@ -78,7 +100,6 @@ body {
 }
 #imageBanner {
 	height:250px;
-	width:1250px;
 	overflow: hidden;
 	margin:auto;
 	position: relative;
@@ -99,6 +120,7 @@ ul {
 
 li {
 	list-style: none;
+	cursor: pointer;
 }
 
 a {
@@ -111,7 +133,6 @@ a {
 	margin: auto;
 	height:50px;
 	background-color:#e75505;
-	width:1250px;
 	position: relative;
 	margin-bottom:55px;
 	
@@ -120,29 +141,24 @@ a {
 	margin:0;
 	margin:auto;
 	position: relative;
-
-
 }
 
 .main {
-
-	float: left;
-	list-style: none;
-	margin-right:80px;
-	padding-left: 15px;
-	padding-right: 15px;
-	left:300px;
-	position: relative;
-	top:15px;
-	color:white;
+	
+	display: inline-block;
+	    width: 24%;
+	    position: relative;
+	    top: 15px;
+	    color: white;
+	    text-align: center;
 
 }
 #subMenu {
 	position: absolute;
 	top:35px;
-	right:-82px;
-	margin-right: 10px;
-	width:120px;
+	left:0px;
+	
+
 	color:white;
 	background-color: orange;
 	padding-left:5px;
@@ -206,8 +222,8 @@ a {
 }
 
 #dailyImg {
-	position: relative;
-	left:25px;
+	
+	margin-left:25px;
 
 }
 
@@ -250,7 +266,6 @@ a {
 
 
 #experience {
-	height:340px;
 	width:65%;
 	background-color: #FFFCF5;
 	position: relative;
@@ -263,9 +278,11 @@ a {
 
 #experience p {
 	position: relative;
-	top:35px;
-	padding:15px;
+	top: 35px;
+	padding: 15px;
+	font-size: 22px;
 	text-align: justify;
+	padding-bottom: 80px;
 
 
 }
@@ -401,11 +418,6 @@ a {
 	padding-right: 4px;
 }
 
-
-
-
-
-
 .beerDiv{
 	position: relative;
 	
@@ -416,9 +428,6 @@ a {
 
 	
 }
-
-
-
 
 .spear {
 	
@@ -471,25 +480,25 @@ a {
 }
 .aBtn {
 	display: block;
-	width:99%;
+	width:100%;
 	text-align: none;
 	height:50px;
 	background-color: #FFFCF5;
 	outline: none;
 	border:1px solid #F7F7F7;
 	color:black;
-	padding-left: 10px;
+
 }
 
 .aBtn span {
 	position: relative;
 	top:15px;
+	padding-left: 10px;
 }
 
 #footer {
 	position: relative;
 	height:150px;
-	width:1250px;
 	background:orange;
 	top:40px;
 	margin: auto;
