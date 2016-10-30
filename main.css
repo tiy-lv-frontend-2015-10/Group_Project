@@ -162,16 +162,12 @@ a {
 }
 #subMenu {
 	position: absolute;
-	top:35px;
-	left:0px;
-	
-
-	color:white;
-	background-color: orange;
-	padding-left:5px;
-	display: none;
-	padding-left: 15px;
-	z-index: 2;
+    top: 35px;
+    width: 100%;
+    background-color: orange;
+    z-index: 2;
+    display: none;
+    text-align: center;
 
 }
 
@@ -192,7 +188,7 @@ a {
 
 
 #subMenu li {
-	width:120px;
+
 	display: block;
 	
 	
@@ -204,6 +200,8 @@ a {
 	margin:auto;
 
 }
+
+
 
 #specialContainer {
 	
