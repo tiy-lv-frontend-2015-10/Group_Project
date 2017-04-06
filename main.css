@@ -1,0 +1,671 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|maki|typicons|zocial);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* maki */
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+  color:red;
+}
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+[class*="typicons-star"]:before {
+  font-family: 'Typicons', sans-serif;
+  color:#D4AF37;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+[class*="zocial-plancast"]:before {
+  font-family: 'zocial', sans-serif;
+  color:blue;
+}
+
+
+body {
+	background:#ECE4D4;
+	font-family: "Abel";
+
+}
+
+@media(max-width: 1250px){
+	body #masterDiv {
+		width:100%;
+	}
+}
+
+@media(max-width: 880px) {
+	body #experience {
+		width:100%;
+	}
+	body .reviewDiv {
+		margin:auto;
+		width:380px;
+	}
+	body .main {
+		top:10px;
+	}
+	body #specialContainer {
+		display: none;
+	}
+}
+
+#masterDiv {
+	width: 1250px;
+	margin:auto;
+}
+
+.description {
+	width:97%;
+}
+
+#overlay {
+	height:2000px;
+	width:100%;
+	position: absolute;
+	top:0;
+	background: gray;
+	z-index: 2;
+	opacity: .5;
+}
+
+#logo {
+	width:115px;
+	position: absolute;
+}
+
+#socialDiv {
+	height:50px;
+	position: absolute;
+	right:0;
+	font-size: 25px;
+}
+
+#socialList {
+	position: relative;
+	float: right;
+	right: 20px;
+}
+
+#socialList li {
+	float: left;
+	margin:10px;
+	
+}
+#imageBanner {
+	height:250px;
+	overflow: hidden;
+	margin:auto;
+	position: relative;
+	
+	
+}
+
+#imageBanner #banner {
+	width: 100%;
+}
+
+
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+li {
+	list-style: none;
+
+}
+
+#navList li {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+
+#navBar {
+	margin: auto;
+	height:50px;
+	background-color:#e75505;
+	position: relative;
+	margin-bottom:55px;
+	
+}
+#navList {
+	margin:0;
+	margin:auto;
+	position: relative;
+}
+
+.main {
+	
+	display: inline-block;
+	    width: 24%;
+	    position: relative;
+	    top: 15px;
+	    color: white;
+	    text-align: center;
+
+}
+#subMenu {
+	position: absolute;
+    top: 35px;
+    width: 100%;
+    background-color: orange;
+    z-index: 2;
+    display: none;
+    text-align: center;
+
+}
+
+.subMenuLi a:hover {
+	color: black;
+}
+
+#menu:hover #subMenu {
+	display: block;
+}
+
+#navList .main:hover {
+	border-bottom: 3px solid black;
+	color: black;
+	padding-bottom: 11px;
+}
+
+
+
+#subMenu li {
+
+	display: block;
+	
+	
+}
+
+#bodyContainer {
+	position: relative;
+	background: #ECE4D4;
+	margin:auto;
+
+}
+
+
+
+#specialContainer {
+	
+	position: absolute;
+	
+	top:40px;
+	right:5px;
+	display: block;
+	height:550px;
+	width:300px;
+	background-color: rgba(51,51,51,0.3);
+}
+#location {
+	color: #fff;
+	position: relative;
+	left:10px;
+}
+
+#dailySpecial {
+	color: #fff;
+	position: relative;
+	left:10px;
+}
+
+#dailyImg {
+	
+	margin-left:25px;
+
+}
+
+#reviews {
+	
+	width:100%;
+
+	position: relative;
+	top:40px;
+	color: #676767;
+	font-size: 24px;
+	display: inline;
+
+}
+
+#reviews p {
+	padding-bottom:25px;
+	margin:0;
+	position: relative;
+	width:100%;
+	display: inline;
+}
+
+.pDiv {
+	margin-left: 50px;
+	width:320px;
+}
+
+.reviewDiv {
+	position: relative;
+	width:400px;
+	padding-bottom:50px;
+}
+
+.fontawesome-quote-right {
+	position: absolute;
+	right:0;
+}
+
+
+
+#experience {
+	width:65%;
+	background-color: #FFFCF5;
+	position: relative;
+	top:20px;
+	border-radius:5px;
+	clear: right;
+
+
+}
+
+#experience p {
+	position: relative;
+	top: 35px;
+	padding: 15px;
+	font-size: 22px;
+	text-align: justify;
+	padding-bottom: 80px;
+
+
+}
+
+#newsContainer {
+	top:150px;
+	position: relative;
+	margin-bottom: 175px;
+
+
+}
+
+#entreeContainer {
+	background:white;
+	position: relative;
+	padding-top: 25px;
+
+}
+#appetizerContainer {
+	background:white;
+	position: relative;
+	padding-top: 25px;
+
+}
+
+#sidesContainer {
+	background:white;
+	position: relative;
+	padding-top: 25px;
+
+}
+
+#welcome {
+	font-size: 20px;
+	text-align: center;
+}
+
+#post {
+	padding:25px;
+	background:#fff;
+}
+
+#dateAdded {
+	position: relative;
+	float: left;
+	background-color: #fff;
+	padding:5px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	top:6px;
+}
+
+
+#lastMeal {
+	position: absolute;
+	margin-left:20px;
+}
+
+#special {
+	color: white;
+}
+#location {
+	font-size: 18px;
+}
+#map {
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+#address {
+	color: white;
+	margin-left:25px;
+	position: relative;
+	top:10px;
+}
+#phoneNumber {
+	color: white;
+	margin-left:25px;
+	position: relative;
+	top:10px;
+}
+
+#dailySpecial {
+	font-size: 18px;
+}
+
+#food {
+	position: relative;
+	width:100%;
+	background:#000;
+	margin-top: 150px;
+	color: white;
+}
+
+#beerContainer {
+	background:white;
+	padding-top: 25px;
+
+}
+
+
+
+.imgGal {
+	height:65%;
+	width:22%;
+	background:#fff;
+	position: relative;
+	top:45px;
+	left:60px;
+}
+
+.entreeList {
+	padding:2px;
+	padding-left: 16px;
+}
+
+.beerList {
+	padding:2px;
+	padding-left: 16px;
+	padding-right: 4px;
+}
+
+.sidesList {
+	padding:2px;
+	padding-left: 16px;
+	padding-right: 4px;
+}
+
+.appetizerList {
+	padding:2px;
+	padding-left: 16px;
+	padding-right: 4px;
+}
+
+.beerDiv{
+	position: relative;
+	
+}
+
+#entreDiv {
+	position: relative;
+
+	
+}
+
+.spear {
+	
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 2, 0, 0), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
+
+}
+
+.dotted {
+	position: absolute;
+	top:5px;
+	left:400px;
+	width:500px;
+	border:1px dotted gray;
+}
+
+#entreeDiv hr:last-child() {
+	display: none;
+}
+
+.itemName {
+	color:green;
+}
+
+.price {
+	position: absolute;
+	right:5px;
+	font-size: 18px;
+}
+
+.aBtn {
+	display: block;
+	width:100%;
+	text-align: none;
+	height:50px;
+	background-color: #FFFCF5;
+	outline: none;
+	border:1px solid #F7F7F7;
+	color:black;
+
+}
+
+.aBtn span {
+	position: relative;
+	top:15px;
+	padding-left: 10px;
+}
+
+#footer {
+	position: relative;
+	height:150px;
+	background:orange;
+	top:40px;
+	margin: auto;
+
+}
+
+#reservationForm {
+	height:550px;
+	width:550px;
+	position: absolute;
+	top:300px;
+	left:50%;
+	margin-left:-275px;
+	border-radius: 5px;
+	background-color: #90AFC5;
+	z-index: 2;
+
+}
+.hidden {
+	max-height: 0;
+	overflow: hidden;
+	transition:max-height 0.8s;
+}
+.displayBlock {
+	display: block;
+	max-height: 1240px;
+    transition: max-height 1.8s;
+	
+}
+
+
+
+
+#reservation {
+	text-align: center;
+	display: block;
+	margin:0;
+	position: relative;
+	top:15px;
+
+}
+#formHeader {
+	height:60px;
+	position: relative;
+	margin-bottom:15px;
+	color:white;
+	background-color: #336B87;
+	z-index: 2;
+
+}
+
+.formInput {
+	width:350px;
+	display: block;
+	height:40px;
+	border:1px solid black;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	background:#fff;
+	outline:none;
+	padding-left: 10px;
+}
+
+#time {
+	width:362px;
+	display: block;
+	height:40px;
+	border:1px solid black;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	background:#fff;
+	outline:none;
+	padding-left: 10px;
+}
+
+#people {
+	width:362px;
+	display: block;
+	height:40px;
+	border:1px solid black;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	background:#fff;
+	outline:none;
+	padding-left: 10px;
+}
+
+
+
+#formData {
+	margin:auto;
+	width:350px;
+
+}
+
+#submit {
+	height:50px; 
+	width:120px;
+	background-color: #336B87;
+	color:white;
+	outline:none;
+	border:none;
+	border-radius: 3px;
+}
+
+#close {
+	height:50px; 
+	width:120px;
+	background-color: #336B87;
+	color:white;
+	outline:none;
+	border:none;
+	border-radius: 3px;
+	display: none;
+}
+
+#appAcord {
+	transition: max-height .5s;
+	overflow: hidden;
+}
+
+.footer-icons p {
+	margin:0;
+}
+
+#footerUl li  {
+	float: left;
+	margin:10px;
+	
+}
+
+#footerUl {
+	height:42px;
+	width:150px;
+	margin-bottom: 10px;
+	margin:auto;
+}
+
+#follow {
+	text-align: center;
+}
+.contact {
+	text-align: center;
+}
+
+
+.copyright {
+	text-align: center;
+	position: relative;
+	top:10px;
+
+}
+
+.gal-img {
+	height:240px;
+	width:240px;
+}
+
+#cor-container {
+	height:240px;
+	width:240px;
+}
+
+.img {
+	height:250px;
+}
+.imgGallery {
+	width:700px;
+	margin:auto;
+
+}
+
+.imgGallery img {
+	margin-left:15px;
+	border-radius: 5px;
+	position: relative;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+#disqus_thread {
+	position: relative;
+	top:20px;
+}
